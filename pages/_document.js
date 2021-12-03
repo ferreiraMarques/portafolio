@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-            <title>My portafolio</title>
+            <title>Portafolio</title>
             <meta name="description" content="Portafolio website"></meta>
         </Head>
         <body>
