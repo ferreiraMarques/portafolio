@@ -493,7 +493,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <p className="text-center py-5 text-base underline decoration-2">
+            <p className="text-center py-5 text-base underline decoration-2 dark:text-white">
               <a
                 className="cursor-pointer"
                 onClick={() =>
