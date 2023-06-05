@@ -159,7 +159,6 @@ export default function Home() {
             <p className="text-md py-3 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               {language === "EN" ? languagues.EN.about1 : languagues.ES.about1}{" "}
               <a
-                target="_blank"
                 className="underline decoration-sky-500"
                 href="https://tramites.insopesca.gob.ve/web/login"
               >
@@ -169,7 +168,6 @@ export default function Home() {
               {language === "EN" ? languagues.EN.about2 : languagues.ES.about2}
               &nbsp;
               <a
-                target="_blank"
                 className="underline decoration-sky-500"
                 href="https://app.gtrmax.com"
               >
@@ -265,7 +263,7 @@ export default function Home() {
                         : languagues.ES.jobs.one.title}
                     </b>{" "}
                     -{" "}
-                    <a target="_blank" href="https://www.tinet.cl/">
+                    <a href="https://www.tinet.cl/">
                       <b>
                         {language === "EN"
                           ? languagues.EN.jobs.one.company
@@ -304,7 +302,7 @@ export default function Home() {
                         : languagues.ES.jobs.two.title}
                     </b>{" "}
                     -{" "}
-                    <a target="_blank" href="https://www.zinli.com/">
+                    <a href="https://www.zinli.com/">
                       <b>
                         {language === "EN"
                           ? languagues.EN.jobs.two.company
@@ -339,7 +337,7 @@ export default function Home() {
                         : languagues.ES.jobs.three.title}
                     </b>{" "}
                     -{" "}
-                    <a target="_blank" href="https://www.bncenlinea.com/">
+                    <a href="https://www.bncenlinea.com/">
                       <b>
                         {language === "EN"
                           ? languagues.EN.jobs.three.company
@@ -360,7 +358,7 @@ export default function Home() {
                         : languagues.ES.tools}
                       :
                     </b>
-                    Kubernetes, Spring Boot, Java 8, Nodejs, Angular 9, DB2,
+                    Kubernetes, Spring Boot, Java 8, Nodejs, Angular 9, Angular Material, DB2,
                     Microservices Architecture.
                   </p>
                 </div>
@@ -374,7 +372,7 @@ export default function Home() {
                         : languagues.ES.jobs.four.title}
                     </b>{" "}
                     -{" "}
-                    <a target="_blank" href="https://www.sigis.com.ve/">
+                    <a href="https://www.sigis.com.ve/">
                       <b>
                         {language === "EN"
                           ? languagues.EN.jobs.four.title
