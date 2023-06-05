@@ -408,7 +408,7 @@ export default function Home() {
               {language === "EN" ? languagues.EN.skills : languagues.ES.skills}
             </h3>
           </div>
-          <div className="text-5xl grid grid-cols-10 justify-items-center md:justify-items-center gap-14 py-5 text-gray-600 dark:text-gray-400 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-cols-6 gap-4 text-5xl justify-items-center md:justify-items-center py-5 text-gray-600 dark:text-gray-400 py-10 lg:flex-row lg:flex-wrap">
             <div>
               <DiJava />
             </div>
