@@ -252,7 +252,7 @@ export default function Home() {
                 : languagues.ES.expirience}
             </h3>
           </div>
-          <div className="flex justify-center lg:flex gap-10 py-4">
+          <div className="flex justify-center lg:flex gap-10 py-4 dark:text-white">
             <ul className="list-disc">
               <li>
                 <div className="text-justify py-2">
@@ -408,7 +408,7 @@ export default function Home() {
               {language === "EN" ? languagues.EN.skills : languagues.ES.skills}
             </h3>
           </div>
-          <div className="grid grid-cols-6 gap-4 text-5xl justify-items-center md:justify-items-center py-5 text-gray-600 dark:text-gray-400 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-cols-6 gap-4 text-5xl justify-items-center md:justify-items-center py-5 text-gray-600 dark:text-gray-400 py-10 lg:flex-row lg:flex-wrap dark:text-white">
             <div>
               <DiJava />
             </div>
@@ -480,7 +480,7 @@ export default function Home() {
                 : languagues.ES.contact}
             </h3>
           </div>
-          <div className="text-6xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-400">
+          <div className="text-6xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-400 dark:text-white">
             <AiFillGithub
               onClick={() => window.open("https://github.com/ferreiraMarques")}
               className="cursor-pointer"
