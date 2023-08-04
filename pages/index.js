@@ -24,15 +24,13 @@ import {
   SiJest,
   SiJunit5,
   SiDocker,
+  SiRabbitmq,
+  SiPhp,
 } from "react-icons/si";
 import { useState } from "react";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import web1 from "../public/1.png";
+import code from "../public/code.png";
 
 const languagues = {
   EN: {
@@ -75,6 +73,23 @@ const languagues = {
         satellite tracking application GTR`,
       },
     },
+    projectsDescripcion: {
+      one: {
+        title: "Chat Room",
+        description:
+          "A chat made with Reactjs, Express and Socket.io to send messages through websockets",
+      },
+      two: {
+        title: "Api CQRS, DDD and Event Driven Design",
+        description:
+          "Exercise applying the Command and Query Responsibility Segregation patterns, Domain Driven Design and Event Driven Design in  Java 17, Spring Boot, Kafka, MongoDB and Mysql",
+      },
+      three: {
+        title: "API for Product Management",
+        description:
+          "API for the management and handling of products with jwt authentication made with Nestjs, Nodejs, Typescript, Mysql, Jest",
+      },
+    },
   },
   ES: {
     job: "Backend Developer",
@@ -111,6 +126,23 @@ const languagues = {
         title: "FullStack Developer",
         company: "Soluciones Integrales GIS, C.A (SIGIS)",
         description: `Participe en el desarrollo y mantenimiento de la aplicación de seguimiento satelital GTR`,
+      },
+    },
+    projectsDescripcion: {
+      one: {
+        title: "Chat Room",
+        description:
+          "Un chat hecho con Reactjs, Express y Socket.io para el envio de mensajes mediante websockets",
+      },
+      two: {
+        title: "Api CQRS, DDD y Event Driven Design",
+        description:
+          "Ejercicio aplicando los patrones Command and Query Responsability Segregation y Event Driven Design en Java 17, Spring Boot, Kafka, MongoDB y Mysql",
+      },
+      three: {
+        title: "Api para la Gestion de Productos",
+        description:
+          "Api para la gestion y manejo de productos con autenticacion jwt hecho con Nestjs, Nodejs, Typescript, Mysql, Jest",
       },
     },
   },
@@ -188,58 +220,105 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/4 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image
+                  class="w-full"
+                  src={web1}
+                  className="rounded-lg object-cover"
+                  width={60}
+                  height={30}
+                  layout="responsive"
+                  alt=""
+                />
+                <div class="px-6 py-4 bg-white">
+                  <div class="font-bold text-xl mb-2">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.one.title
+                      : languagues.ES.projectsDescripcion.one.title}
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.one.description
+                      : languagues.ES.projectsDescripcion.one.description}
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 bg-white">
+                  <a
+                    href="https://github.com/ferreiraMarques/room-chat"
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
+                    #Link Github
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
+
+            <div className="basis-1/4 flex-1 ">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image
+                  class="w-full"
+                  src={code}
+                  className="rounded-lg object-cover"
+                  width={60}
+                  height={30}
+                  layout="responsive"
+                  alt=""
+                />
+                <div class="px-6 py-4 bg-white">
+                  <div class="font-bold text-xl mb-2">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.two.title
+                      : languagues.ES.projectsDescripcion.two.title}
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.two.description
+                      : languagues.ES.projectsDescripcion.two.description}
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 bg-white">
+                  <a
+                    href="https://github.com/ferreiraMarques/cqrs-eventsourcing-spring-boot"
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
+                    #Link Github
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/4 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
+
+            <div className="basis-1/4 flex-1 ">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <Image
+                  class="w-full"
+                  src={code}
+                  className="rounded-lg object-cover"
+                  layout="responsive"
+                  width={60}
+                  height={30}
+                  alt=""
+                />
+                <div class="px-6 py-4 bg-white">
+                  <div class="font-bold text-xl mb-2">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.three.title
+                      : languagues.ES.projectsDescripcion.three.title}
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    {language === "EN"
+                      ? languagues.EN.projectsDescripcion.three.description
+                      : languagues.ES.projectsDescripcion.three.description}
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 bg-white">
+                  <a
+                    href="https://github.com/ferreiraMarques/product-managment"
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
+                    #Link Github
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -358,8 +437,8 @@ export default function Home() {
                         : languagues.ES.tools}
                       :
                     </b>
-                    Kubernetes, Spring Boot, Java 8, Nodejs, Angular 9, Angular Material, DB2,
-                    Microservices Architecture.
+                    Kubernetes, Spring Boot, Java 8, Nodejs, Angular 9, Angular
+                    Material, DB2, Microservices Architecture.
                   </p>
                 </div>
               </li>
@@ -468,6 +547,9 @@ export default function Home() {
             </div>
             <div>
               <SiJest />
+            </div>
+            <div>
+              <SiRabbitmq />
             </div>
           </div>
         </section>
