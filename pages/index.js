@@ -454,8 +454,8 @@ export default function Home() {
                     <a href="https://www.sigis.com.ve/">
                       <b>
                         {language === "EN"
-                          ? languagues.EN.jobs.four.title
-                          : languagues.ES.jobs.four.title}
+                          ? languagues.EN.jobs.four.company
+                          : languagues.ES.jobs.four.company}
                       </b>
                     </a>
                     &nbsp;(2020 - 2021)
